@@ -1,4 +1,29 @@
-.stick {
-    background-color: rgba(255, 0, 0, 0.6) !important;
-    border-radius: 50% !important;
+/* Stationary yellow circles behind both thumbsticks */
+.xbox .sticks::before,
+.xbox .sticks::after {
+    content: "";
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    background: #ffff00;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Left thumbstick background */
+.xbox .sticks::before {
+    left: -15.5px;
+    top: -15.5px;
+}
+
+/* Right thumbstick background */
+.xbox .sticks::after {
+    left: 272.5px;
+    top: 97.5px;
+}
+
+/* Keep the moving textured sticks above the yellow */
+.xbox .stick {
+    z-index: 1;
 }
