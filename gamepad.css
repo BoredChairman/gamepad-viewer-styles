@@ -1,5 +1,4 @@
-.stick, .stick-background {
-  background-image: none !important;
-  background-color: #ff0000 !important;
-  border-radius: 50% !important;
+.stick {
+    background-color: rgba(255, 0, 0, 0.6) !important;
+    border-radius: 50% !important;
 }
